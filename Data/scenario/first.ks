@@ -3,6 +3,7 @@
 @menul
 @wait time = 1000
 
+@call storage = evManage.ks
 [if exp="sf.start == 0"]
 @eval exp="sf.start = 1"
 @eval exp="sf.sevol = 70"
@@ -11,14 +12,14 @@
 @eval exp="sf.window = 1"
 @eval exp="sf.cg=[]"
 [endif]
-
+@systemSettings
 
 *menu
 @clickskip enabled=false
 @startanchor
-@menul
-@bg storage=home_of_Baedela time=2000
-@wait time=100
+@ 
+@bg storage=home_of_Baedela time = 2000 method = crossfade
+@wt
 @font size=32
 @nowait
 @locate x=120 y=180
