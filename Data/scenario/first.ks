@@ -11,13 +11,14 @@
 @eval exp="sf.speed = 70"
 @eval exp="sf.window = 1"
 @eval exp="sf.cg=[]"
+@eval exp="sf.cg=[]"
 [endif]
 @systemSettings
 
 *menu
-@clickskip enabled=false
+@clickskip enabled = false
+@rclick enabled = false
 @startanchor
-@ 
 @bg storage=home_of_Baedela time = 2000 method = crossfade
 @wt
 @font size=32
