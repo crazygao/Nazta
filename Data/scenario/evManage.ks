@@ -19,4 +19,8 @@
 	[eval exp = "kag.onFullScreenMenuItemClick(kag)" cond = "sf.window == 0"]
 	[eval exp = "kag.onWindowedMenuItemClick(kag)" cond = "sf.window == 1"]
 @endmacro
+
+@macro name = exitgame
+	@eval exp="kag.close()"
+@endmacro
 [return]
